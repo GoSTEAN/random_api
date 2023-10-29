@@ -54,7 +54,11 @@ class IdeaForm {
     <form id="idea-form">
           <div class="form-control">
             <label for="idea-text">Enter a Username</label>
-            <input type="text" name="username" id="username" value='${localStorage.getItem('username') ? localStorage.getItem('username') : ''} '/>
+            <input type="text" name="username" id="username" value="${
+              localStorage.getItem("username")
+                ? localStorage.getItem("username")
+                : ""
+            }" '/>
           </div>
           <div class="form-control">
             <label for="idea-text">What's Your Idea?</label>
